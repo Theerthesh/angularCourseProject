@@ -1,0 +1,5 @@
+add input button and display text which entered in text box
+add button
+enable button only when input text is not empty 
+disable button when input text is empty
+when button click make input text is empty

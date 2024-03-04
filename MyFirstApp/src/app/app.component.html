@@ -1,0 +1,9 @@
+<div class="container">
+  <div><app-worring></app-worring></div>
+  <div><app-success></app-success></div>
+</div>
+
+<p>----------------------------------2nd task--------------------------------------</p>
+<input type="text" [(ngModel)]="username">
+<p>{{username}}</p>
+<button [disabled]="!username" (click)="onEmpty()">Display</button>

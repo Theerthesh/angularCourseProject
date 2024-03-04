@@ -1,0 +1,21 @@
+<ul>
+ <li> 	add button which says 'Display details' </li> 
+ <li> 	add any paragraph below button and add toggle for this means once click button this paragraph shows and second time click the paragraph show hide ect </li> 
+ <li> z	below the paragraph add a counts like show many times you click button 
+  ex: 1
+  2
+                    3...  
+</li> 
+ <li>  
+  ⦁	if count is 5 or >  apply backgroung color blue using ngStyle and white color for text using [ngClass]</li>
+ </ul>
+
+
+<button (click)="onclickPara()">Display details</button>
+<p *ngIf="displayPra">aaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+<div *ngFor="let count of log; let i=index"
+[ngStyle]="{backgroundColor: count>=5?'blue':'transperent'}"
+[ngClass]="{whitecolor:count>=5}"
+>
+<p *ngIf="i==0">Index | data</p>
+{{i}} = {{count}}</div>
