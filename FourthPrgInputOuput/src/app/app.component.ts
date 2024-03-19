@@ -7,10 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FourthPrgInputOuput';
+  Servers :any = [];
 
-  Servers=[{type:"normal", name: "server1", description: "server decription"}]
- constructor(){
-  
+ OnServerCreated(serverData :{type:string,name:string,description:string}){
+this.Servers.push(serverData);
  }
-  
 }

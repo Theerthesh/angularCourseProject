@@ -1,16 +1,20 @@
 <div class="container" >
     <div class="row">
         <div class="col-sm-4" style="margin: 10px;">
-        <input type="text" placeholder="Server name" class="form-control">
+        <input type="text" placeholder="Server name" class="form-control" [(ngModel)]="name">
         </div>
     </div>
     <div class="row">
         <div class="col-sm-4" style="margin: 10px;">
-            <input type="text" placeholder="Server details" class="form-control">
+            <input type="text" placeholder="Server details" class="form-control" [(ngModel)]="description">
             </div>
     </div>
-    <div class="row">
-        <div class="col-sm-3" style="padding: 10px;"><button type="button" class="btn btn-primary"> Create Server</button></div>
-        <div class="col-sm-4" style="padding: 10px;"><button type="button" class="btn btn-primary"> Create blue Server</button></div>
+    <div class="row" >
+        <div class="col-sm-3" style="padding: 10px;">
+            <button type="button" class="btn btn-primary" (click)="OnCreate()" [disabled]="name === '' || description === ''"> Create Server</button>
+        </div>
+        <div class="col-sm-4" style="padding: 10px;">
+            <button type="button" class="btn btn-primary" (click)="Onblue()" [disabled]="name === '' || description === ''"> Create blue Server</button>
+        </div>
     </div>
 </div>
