@@ -7,4 +7,8 @@ import { Component, Input } from '@angular/core';
 })
 export class ServerDetailsComponent {
   @Input() sdServer: { type: string; name: string; description: string; } | any;
+
+  getColor(){    
+    return this.sdServer.type ==='blue'? 'blue' : 'normal'
+  }
 }
