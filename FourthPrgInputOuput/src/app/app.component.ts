@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'FourthPrgInputOuput';
+
+  Servers=[{type:"normal", name: "server1", description: "server decription"}]
+ constructor(){
+  
+ }
+  
 }

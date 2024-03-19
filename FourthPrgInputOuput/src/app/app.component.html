@@ -1,3 +1,4 @@
 <app-server-input></app-server-input>
-
-<app-server-details></app-server-details>
+<div *ngIf="Servers.length > 0">
+    <app-server-details  *ngFor="let element of Servers" [sdServer]="element"></app-server-details>
+</div>
