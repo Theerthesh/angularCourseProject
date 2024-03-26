@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'ThirdProjectShopping';
+headerSelected = 'recipe';
+
+  onHeaderSelected(feature:string){
+this.headerSelected = feature;
+  }
 }

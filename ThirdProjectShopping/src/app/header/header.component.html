@@ -10,8 +10,8 @@
 <!-- below code is creating list in header  -->
         <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
-                <li><a href="#">Recipes</a> </li>
-                <li><a href="#">Shopping list</a> </li>
+                <li (click)="onSelected('recipe')"><a>Recipes</a> </li>
+                <li (click)="onSelected('shopping')"><a>Shopping list</a> </li>
             </ul>
 
 <!-- below code is creating drowpdown in the navbar -->
