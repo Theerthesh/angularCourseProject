@@ -7,9 +7,12 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
+  Onrecipe = true;
 @Output() headerSelected=new EventEmitter<string>();
+
   onSelected(feature:string){
 this.headerSelected.emit(feature);
+this.Onrecipe = (feature ==='recipe') ? true : false;
   }
 
 }

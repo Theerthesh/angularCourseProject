@@ -9,7 +9,7 @@ import { Recipe } from '../recipe.module';
 export class RecipeDetailComponent {
 @Input() recipe :Recipe | any 
 constructor(){
-  console.log(this.recipe);
+  // console.log(this.recipe);
   
 }
 }
