@@ -12,5 +12,8 @@ ingredients:Ingredient[] = [
   new Ingredient('Tomatoes',10),
 ];
 
+addIngt(Ing:Ingredient){
+  this.ingredients.push(Ing);
+}
 
 }
