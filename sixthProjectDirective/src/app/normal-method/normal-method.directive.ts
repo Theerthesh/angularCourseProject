@@ -1,10 +1,14 @@
-import { Directive } from '@angular/core';
+import { Directive, ElementRef, OnInit } from '@angular/core';
 
 @Directive({
   selector: '[appNormalMethod]'
 })
-export class NormalMethodDirective {
+export class NormalMethodDirective implements OnInit {
 
-  constructor() { }
+  constructor(private ele:ElementRef) { }
+
+  ngOnInit() {
+    this.ele.nativeElement.Style.backgroundColor='green'
+  }
 
 }
