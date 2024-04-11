@@ -8,7 +8,7 @@ export class NormalMethodDirective implements OnInit {
   constructor(private ele:ElementRef) { }
 
   ngOnInit() {
-    this.ele.nativeElement.Style.backgroundColor='green'
+    this.ele.nativeElement.backgroundColor='yellow';  
   }
 
 }
