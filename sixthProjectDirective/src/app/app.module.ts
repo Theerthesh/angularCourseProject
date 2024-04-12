@@ -6,6 +6,8 @@ import { AppComponent } from './app.component';
 import { NormalMethodDirective } from './normal-method/normal-method.directive';
 import { RenderDirectiveDirective } from './renderDirective/render-directive.directive';
 import { MouseeventDirectiveDirective } from './mouseevent-directive/mouseevent-directive.directive';
+import { CsspropertyDirectiveDirective } from './cssproperty-directive/cssproperty-directive.directive';
+import { PropertybindingDirectiveDirective } from './propertybinding-directive/propertybinding-directive.directive';
 
 @NgModule({
   declarations: [
@@ -13,6 +15,8 @@ import { MouseeventDirectiveDirective } from './mouseevent-directive/mouseevent-
     NormalMethodDirective,
     RenderDirectiveDirective,
     MouseeventDirectiveDirective,
+    CsspropertyDirectiveDirective,
+    PropertybindingDirectiveDirective,
   ],
   imports: [
     BrowserModule,
