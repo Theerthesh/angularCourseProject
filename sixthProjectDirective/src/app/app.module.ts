@@ -5,12 +5,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NormalMethodDirective } from './normal-method/normal-method.directive';
 import { RenderDirectiveDirective } from './renderDirective/render-directive.directive';
+import { MouseeventDirectiveDirective } from './mouseevent-directive/mouseevent-directive.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     NormalMethodDirective,
-    RenderDirectiveDirective
+    RenderDirectiveDirective,
+    MouseeventDirectiveDirective,
   ],
   imports: [
     BrowserModule,
