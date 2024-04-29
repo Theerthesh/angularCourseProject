@@ -1,0 +1,5 @@
+<h1>Active users</h1>
+<hr>
+<ul>
+    <li *ngFor="let data of service.activeUser;let i=index ">{{data}} | <button (click)="service.OnInactive(i)">set Inactive</button></li>
+</ul>
