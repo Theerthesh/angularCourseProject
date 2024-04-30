@@ -1,5 +1,8 @@
-import { Component, Input } from '@angular/core';
+import { Component, Injectable, Input } from '@angular/core';
 import { Recipe } from '../recipe.module';
+import { IngredientService } from '../../shared/ingredient.service';
+
+
 
 @Component({
   selector: 'app-recipe-detail',
@@ -7,9 +10,12 @@ import { Recipe } from '../recipe.module';
   styleUrl: './recipe-detail.component.css'
 })
 export class RecipeDetailComponent {
-@Input() recipe :Recipe | any 
-constructor(){
+@Input() recipe :Recipe|any; 
+constructor(public ingService:IngredientService){
   // console.log(this.recipe);
   
 }
+
+
+
 }

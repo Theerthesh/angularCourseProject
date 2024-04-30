@@ -16,9 +16,9 @@
                 Manage Recipe <span class="caret"></span>
             </button>
             <ul class="dropdown-menu">
-                <li><a href="#">To shopping list</a></li>
-                <li><a href="#">Edit Recipe</a></li>
-                <li><a href="#">Delete recipe</a></li>
+                <li><a (click)="ingService.addIngFromReciptToShopping(recipe.Ingredent)">To shopping list</a></li>
+                <li><a >Edit Recipe</a></li>
+                <li><a >Delete recipe</a></li>
             </ul>
         </div>
     </div>
@@ -28,7 +28,9 @@
         {{recipe.description}}
     </div>
     <div class="col-xs-12">
-        ingrediants
+        <ul class="list-group">
+            <li class="list-group-item" *ngFor="let ing of recipe.Ingredent">{{ing.name}} - {{ing.amount}}</li>
+        </ul>
     </div>
 </div>
 </div>

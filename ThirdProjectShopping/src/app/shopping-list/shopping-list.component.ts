@@ -1,19 +1,15 @@
-import { Component } from '@angular/core';
+import { Component, Injectable } from '@angular/core';
 import { Ingredient } from '../shared/ingredient.model';
-
+import { IngredientService } from '../shared/ingredient.service';
+@Injectable()
 @Component({
   selector: 'app-shopping-list',
   templateUrl: './shopping-list.component.html',
   styleUrl: './shopping-list.component.css'
 })
 export class ShoppingListComponent {
-ingredients:Ingredient[] = [
-  new Ingredient('Apples',5),
-  new Ingredient('Tomatoes',10),
-];
+  ingredients = this.ing.ingredients;
 
-addIngt(Ing:Ingredient){
-  this.ingredients.push(Ing);
-}
+constructor(public ing:IngredientService){}
 
 }
