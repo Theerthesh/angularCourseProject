@@ -3,17 +3,17 @@
 <div class="container-fluid p-5 bg-primary text-white text-center">
   <h1>My Router project</h1>
 </div>
-<nav class="navbar navbar-expand-sm bg-light navbar-light">
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
   <div class="container justify-content-center ">
     <ul class="navbar-nav">
-      <li class="nav-item">
-        <a class="nav-link active" routerLink="/">Home</a>
+      <li class="nav-item" >
+        <a class="nav-link" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}" routerLink="/">Home</a>
       </li>
-     <li class="nav-item">
-        <a class="nav-link" routerLink="services">Services</a>
+     <li class="nav-item" >
+        <a class="nav-link" routerLinkActive="services" routerLink="services">Services</a>
       </li>
-      <li class="nav-item">
-        <a class="nav-link" routerLink="users">Users</a>
+      <li class="nav-item" >
+        <a class="nav-link" routerLinkActive="users" routerLink="users">Users</a>
       </li>
     </ul>
   </div>
