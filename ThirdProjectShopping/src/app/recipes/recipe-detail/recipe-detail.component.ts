@@ -13,6 +13,7 @@ import { IngredientService } from '../../shared/ingredient.service';
 })
 export class RecipeDetailComponent implements OnInit{
 recipe :Recipe|any; 
+id!:number;
 constructor( 
   private router:ActivatedRoute,
 private recipesService:RecipesService,
@@ -22,7 +23,7 @@ public ingService:IngredientService){
 }
 
 ngOnInit(): void {
-  const id = +this.router.snapshot.params['id'];
+  this.id = +this.router.snapshot.params['id'];
   this.router.params.subscribe(
     (param:Params) => {
       this.recipe = this.recipesService.getRecipesByIndex(+param['id']);
