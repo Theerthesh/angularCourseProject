@@ -7,7 +7,4 @@ import { Component, EventEmitter, Output } from '@angular/core';
 })
 export class HeaderComponent {
   collapsed = true;
-
-@Output() headerSelected=new EventEmitter<string>();
-
 }
