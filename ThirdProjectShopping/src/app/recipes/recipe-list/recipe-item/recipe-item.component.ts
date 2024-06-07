@@ -8,10 +8,4 @@ import { Recipe } from '../../recipe.module';
 })
 export class RecipeItemComponent {
   @Input()recipe:any;
-  @Output() SelectedRecipe=new EventEmitter<Recipe>();
-  
-  
-  OnSelectedRecipe(recipe:Recipe){
-this.SelectedRecipe.emit(recipe);
-  }
 }

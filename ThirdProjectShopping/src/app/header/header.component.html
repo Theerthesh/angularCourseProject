@@ -5,22 +5,22 @@
             <button type="button" class="navbar-toggle" (click)="collapsed=!collapsed">
                 <span class="icon-bar" *ngFor="let iconbar of [1,2,3]"></span>
             </button>
-            <a href="#" class="navbar-brand">Recipe book</a>
+            <a  class="navbar-brand">Recipe book</a>
         </div>
 <!-- below code is creating list in header  -->
         <div class="navbar-collapse" [class.collapse]="collapsed" (window:resize)="collapsed = true">
             <ul class="nav navbar-nav">
-                <li (click)="onSelected('recipe')" [ngClass]="{selectedheader:Onrecipe}"><a>Recipes</a> </li>
-                <li (click)="onSelected('shopping')" [ngClass]="{selectedheader:!Onrecipe}"><a>Shopping list</a> </li>
+                <li routerLinkActive="active"><a routerLink="recipes">Recipes</a> </li>
+                <li routerLinkActive="active"><a routerLink="shopping-list">Shopping list</a> </li>
             </ul>
 
 <!-- below code is creating drowpdown in the navbar -->
             <ul class="nav navbar-nav navbar-right">
                 <li class="dropdown" appDropdownDirective>
-                    <a href="#" class="dropdown-toggel" role="button">Manage <span class="caret"></span></a>
+                    <a class="dropdown-toggel" role="button">Manage <span class="caret"></span></a>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Save data</a></li>
-                        <li><a href="#">Fetch data</a></li>
+                        <li><a >Save data</a></li>
+                        <li><a >Fetch data</a></li>
                     </ul>
                 </li>
             </ul>

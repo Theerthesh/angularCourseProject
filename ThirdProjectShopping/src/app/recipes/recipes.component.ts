@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Recipe } from './recipe.module';
+import { ActivatedRoute, Router } from '@angular/router';
 
 @Component({
   selector: 'app-recipes',
@@ -7,5 +8,7 @@ import { Recipe } from './recipe.module';
   styleUrl: './recipes.component.css'
 })
 export class RecipesComponent {
- selectedRecipe:Recipe |any
+
+constructor(private router:Router){}
+ 
 }
