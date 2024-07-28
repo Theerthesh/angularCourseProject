@@ -1,0 +1,26 @@
+<div class="d-flex align-items-center justify-content-center min-vh-100 bg-light">
+ 
+  <div class="container text-center">
+    <h2><b>Users List</b></h2>
+    <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Name</th>
+            <th scope="col">Employee Id</th>
+            <th scope="col">Email</th>
+            <th scope="col">Mobile Number</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let user of users">
+            <td>{{user.FirstName}} {{user.LastName}}</td>
+            <td>{{user.Employee_id}}</td>
+            <td>{{user.EmailId}}</td>
+            <td>{{user.MobileNumber}}</td>
+          </tr>
+        </tbody>
+    </table>
+    
+        <button class="btn btn-primary" routerLink="/adduser"> Add user</button>
+    </div>
+</div>

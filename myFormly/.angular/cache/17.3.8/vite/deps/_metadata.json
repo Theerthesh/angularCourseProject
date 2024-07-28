@@ -1,0 +1,85 @@
+{
+  "hash": "72a895eb",
+  "configHash": "e2dec642",
+  "lockfileHash": "2caea16b",
+  "browserHash": "0965afb1",
+  "optimized": {
+    "@angular/common": {
+      "src": "../../../../../node_modules/@angular/common/fesm2022/common.mjs",
+      "file": "@angular_common.js",
+      "fileHash": "b6684ba3",
+      "needsInterop": false
+    },
+    "@angular/core": {
+      "src": "../../../../../node_modules/@angular/core/fesm2022/core.mjs",
+      "file": "@angular_core.js",
+      "fileHash": "fd51a05e",
+      "needsInterop": false
+    },
+    "@angular/forms": {
+      "src": "../../../../../node_modules/@angular/forms/fesm2022/forms.mjs",
+      "file": "@angular_forms.js",
+      "fileHash": "5c67908f",
+      "needsInterop": false
+    },
+    "@angular/platform-browser": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/platform-browser.mjs",
+      "file": "@angular_platform-browser.js",
+      "fileHash": "625bbd45",
+      "needsInterop": false
+    },
+    "@angular/router": {
+      "src": "../../../../../node_modules/@angular/router/fesm2022/router.mjs",
+      "file": "@angular_router.js",
+      "fileHash": "79fcbfae",
+      "needsInterop": false
+    },
+    "@ngx-formly/bootstrap": {
+      "src": "../../../../../node_modules/@ngx-formly/bootstrap/fesm2020/ngx-formly-bootstrap.mjs",
+      "file": "@ngx-formly_bootstrap.js",
+      "fileHash": "00635754",
+      "needsInterop": false
+    },
+    "@ngx-formly/core": {
+      "src": "../../../../../node_modules/@ngx-formly/core/fesm2020/ngx-formly-core.mjs",
+      "file": "@ngx-formly_core.js",
+      "fileHash": "af9305a1",
+      "needsInterop": false
+    },
+    "@angular/platform-browser/animations/async": {
+      "src": "../../../../../node_modules/@angular/platform-browser/fesm2022/animations/async.mjs",
+      "file": "@angular_platform-browser_animations_async.js",
+      "fileHash": "17f2cf5d",
+      "needsInterop": false
+    },
+    "@angular/material/dialog": {
+      "src": "../../../../../node_modules/@angular/material/fesm2022/dialog.mjs",
+      "file": "@angular_material_dialog.js",
+      "fileHash": "4bf0ac5c",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "browser-FLLK67T4": {
+      "file": "browser-FLLK67T4.js"
+    },
+    "chunk-HL6MMF3J": {
+      "file": "chunk-HL6MMF3J.js"
+    },
+    "chunk-VLSM63PX": {
+      "file": "chunk-VLSM63PX.js"
+    },
+    "chunk-GBTSAACT": {
+      "file": "chunk-GBTSAACT.js"
+    },
+    "chunk-QLG4C5FU": {
+      "file": "chunk-QLG4C5FU.js"
+    },
+    "chunk-2QGUT4IA": {
+      "file": "chunk-2QGUT4IA.js"
+    },
+    "chunk-DGU6SOBF": {
+      "file": "chunk-DGU6SOBF.js"
+    }
+  }
+}

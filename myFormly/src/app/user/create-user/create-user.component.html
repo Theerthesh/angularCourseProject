@@ -1,0 +1,35 @@
+<div class="container mt-4" *ngIf="!isUserAdd">
+    <div class="row justify-content-center">
+        <h4 class="text-center m-4">Create User</h4>
+        <div class="col-md-4 shadow-sm bg-white rounded">
+            <form [formGroup]="form" (ngSubmit)="OnSubmit()">
+                <formly-form [form]="form" [fields]="fields" [model]="model"></formly-form>
+                <button mat-button type="submit" class="btn btn-primary d-block mx-auto m-4" [disabled]="!form.valid">
+                    Submit
+                </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+<!-- <div class="container border border-success" *ngIf="isUserAdd">
+    <div class="row mx-auto" style="width: fit-content;">
+        <div class="text-success">User successfully added</div>
+    </div>
+    <div class="row mx-auto">
+        <div class="col text-center m-4">
+            <button type="button" class="btn btn-primary"> Ok </button>
+
+        </div>
+    </div>
+</div> -->
+    <ng-template #dialogContent >
+        <h1 mat-dialog-title>Success</h1>
+        <div mat-dialog-content>
+          <p>User details added successfully</p>
+        </div>
+        <div mat-dialog-actions class="d-flex justify-content-center">
+          <button mat-button class="btn btn-primary" (click)="onClose()">Ok</button>
+        </div>
+    </ng-template>
+
